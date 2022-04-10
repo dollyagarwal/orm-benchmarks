@@ -1,0 +1,2 @@
+,Testcase,Table,Rows,Total time,RowsPerSec,ORM
+0,I,Item,5000,      0.93,   5403.74,Peewee

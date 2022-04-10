@@ -1,0 +1,6 @@
+,Testcase,Table,Rows,Total time,RowsPerSec,ORM
+0,C,Warehouse,500,      0.04,  11179.68,Peewee
+1,C,District,5000,      0.29,  17076.26,Peewee
+2,C,Customer,5000,      0.56,   8995.17,Peewee
+3,C,Item,5000,      0.14,  34551.62,Peewee
+4,C,Stock,2500000,    682.47,   3663.17,Peewee

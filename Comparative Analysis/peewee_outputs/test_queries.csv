@@ -1,0 +1,4 @@
+,Testcase,Table,Rows,Total time,RowsPerSec,ORM
+0,queries,Query1,249479,      0.61, 406104.49,Peewee
+1,queries,Query2,500,      0.42,   1177.24,Peewee
+2,queries,Query3,495000,      0.57, 870665.96,Peewee
