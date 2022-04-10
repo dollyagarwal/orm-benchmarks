@@ -1,0 +1,106 @@
+Performance test done at:  Wed Mar 30 16:28:21 2022
+------------Test insertions (A-C)---------------
+test done at:  Wed Mar 30 16:28:21 2022
+Starting Truncate-Insertion tests
+Starting truncate and insert:  0
+Test A done at:  Wed Mar 30 16:28:21 2022
+--------------------Running Test A-------------------
+Django Testcase A, Warehouse: Rows: 500 , Time: 0.21038508415222168
+Django Testcase A, Warehouse: Rows/sec:    2376.59
+Django Testcase A, District: Rows: 5000 , Time: 1.119217872619629
+Django Testcase A, District: Rows/sec:    4467.41
+Django Testcase A, Customers: Rows: 5000 , Time: 1.4807140827178955
+Django Testcase A, Customers: Rows/sec:    3376.75
+Django Testcase A, Items: Rows: 5000 , Time: 0.7120039463043213
+Django Testcase A, Items: Rows/sec:    7022.43
+Django Testcase A, Stock: Rows: 2500000 , Time: 620.7121272087097
+Django Testcase A, Stock: Rows/sec:    4027.63
+Test 0: total insert runtime:     624.30
+Test 0: total runtime:     624.41
+Starting truncate and insert:  1
+Test B done at:  Wed Mar 30 16:38:47 2022
+--------------------Running Test B-------------------
+Django Testcase B, Warehouse: Rows: 500 , Time: 0.0783088207244873
+Django Testcase B, Warehouse: Rows/sec:    6384.98
+Django Testcase B, District: Rows: 5000 , Time: 0.7793612480163574
+Django Testcase B, District: Rows/sec:    6415.51
+Django Testcase B, Customers: Rows: 5000 , Time: 1.1608240604400635
+Django Testcase B, Customers: Rows/sec:    4307.28
+Django, Items: Rows: 5000 , Time: 0.5654489994049072
+Django, Items: Rows/sec:    8842.53
+Django Testcase B, Stock: Rows: 2500000 , Time: 420.8236689567566
+Django Testcase B, Stock: Rows/sec:    5940.73
+Test 1: total insert runtime:     423.51
+Test 1: total runtime:     424.81
+Starting truncate and insert:  2
+Test C done at:  Wed Mar 30 16:45:50 2022
+--------------------Running Test C-------------------
+Django Testcase C, Warehouse: Rows: 500 , Time: 0.1013040542602539
+Django Testcase C, Warehouse: Rows/sec:    4935.64
+Django Testcase C, District: Rows: 5000 , Time: 0.34266209602355957
+Django Testcase C, District: Rows/sec:   14591.63
+Django Testcase C, Customers: Rows: 5000 , Time: 0.7035400867462158
+Django Testcase C, Customers: Rows/sec:    7106.92
+Django Testcase C, Items: Rows: 5000 , Time: 0.1623549461364746
+Django Testcase C, Items: Rows/sec:   30796.72
+Django Testcase C, Stock: Rows: 2500000 , Time: 206.69281196594238
+Django Testcase C, Stock: Rows/sec:   12095.24
+Test 2: total insert runtime:     208.03
+Test 2: total runtime:     208.09
+All truncate and insert tests done successfully
+------------Test D---------------
+test D done at:  Wed Mar 30 16:49:18 2022
+Django Testcase D, Rows fetched: 5000, time taken: 0.0846710205078125
+Django Testcase D, Filter on warehouse: Rows/sec:   59052.08
+Django Testcase D, Rows fetched: 55000, time taken: 0.5994408130645752
+Django Testcase D, Filter on District: Rows/sec:   91752.18
+Django Testcase D, Rows fetched: 25055000, time taken: 186.19022512435913
+Django Testcase D, Filter on Stock: Rows/sec:  134566.68
+------------Test E---------------
+test E done at:  Wed Mar 30 16:52:25 2022
+Django Testcase E, Rows fetched: 9708, time taken: 4.270395994186401
+Django Testcase E, Warehouse: Rows/sec:    2273.33
+Django Testcase E, Rows fetched: 108844, time taken: 118.34157729148865
+Django Testcase E, District: Rows/sec:     919.74
+Django Testcase E, Rows fetched: 109464, time taken: 93.39637088775635
+Django Testcase E, Stock: Rows/sec:    1172.04
+------------Test F---------------
+test F done at:  Wed Mar 30 16:56:01 2022
+Django Testcase F, Rows fetched: 1000, time taken: 0.24276089668273926
+Django Testcase F, Warehouse: Rows/sec:    4119.28
+Django Testcase F, Rows fetched: 1000, time taken: 0.23115897178649902
+Django Testcase F, District: Rows/sec:    4326.03
+Django Testcase F, Rows fetched: 1000, time taken: 0.23702287673950195
+Django Testcase F, Stock: Rows/sec:    4219.00
+------------Test G---------------
+Test G done at:  Wed Mar 30 16:56:02 2022
+Django Testcase G, Rows fetched: 5000, time taken: 0.03205275535583496
+Django Testcase G, Rows/sec:  155992.83
+------------Test H---------------
+Test H done at:  Wed Mar 30 16:56:02 2022
+Django Testcase H, Rows fetched: 5000, time taken: 0.027454137802124023
+Django Testcase H, Rows/sec:  182121.91
+------------Test I---------------
+test I done at:  Wed Mar 30 16:56:02 2022
+Django Testcase I, Rows updated: 5000, time taken: 0.899616003036499
+Django Testcase I, Django update all rows of Item, I: Rows/sec:    5557.93
+------------Test J---------------
+test J done at:  Wed Mar 30 16:56:03 2022
+Django Testcase J, Rows updated: 5000, time taken: 0.848675012588501
+Django Testcase J, Rows/sec:    5891.54
+------------Test K---------------
+test K done at:  Wed Mar 30 16:56:04 2022
+Django Testcase K, Rows deleted: 5000, time taken: 7.805207967758179
+Django Testcase K, Rows/sec:     640.60
+------------Test Queries---------------
+---------Retrieve ID of all stocks with maximum quantity------
+Django Testcase query1, Rows fetched: 249612, time taken: 0.14427709579467773
+Django Testcase query1, Rows/sec:  1730087.50
+---------Find warehouse id from stock table where average quantity >= 550------
+SELECT "Stock"."id" FROM "Stock" GROUP BY "Stock"."id" HAVING AVG("Stock"."quantity") >= 550.0
+Django Testcase query2, Rows fetched: 0, time taken: 0.012090921401977539
+Django Testcase query2, Rows/sec:       0.00
+---------Find stockid from all warehouses in Singapore------
+SELECT "Stock"."id" FROM "Stock" INNER JOIN "Warehouse" ON ("Stock"."warehouse_id" = "Warehouse"."id") WHERE "Warehouse"."city" = Singapore
+Django Testcase query3, Rows fetched: 0, time taken: 0.000308990478515625
+Django Testcase query3, Rows/sec:       0.00
