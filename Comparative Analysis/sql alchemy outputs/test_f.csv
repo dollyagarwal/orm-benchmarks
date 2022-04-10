@@ -1,0 +1,4 @@
+,Testcase,Table,Rows,Total time,RowsPerSec,ORM
+0,F,Warehouse,1000,      0.23,   4299.71,SQLAlchemy
+1,F,District,1000,      0.43,   2329.69,SQLAlchemy
+2,F,Stock,1000,      0.24,   4129.64,SQLAlchemy

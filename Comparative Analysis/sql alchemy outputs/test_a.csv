@@ -1,0 +1,6 @@
+,Testcase,Table,Rows,Total time,RowsPerSec,ORM
+0,A,Warehouse,500,      0.02,  23086.22,SQLAlchemy
+1,A,District,5000,      0.10,  48892.07,SQLAlchemy
+2,A,Customer,5000,     11.02,    453.80,SQLAlchemy
+3,A,Item,5000,      0.08,  61567.22,SQLAlchemy
+4,A,Stock,2500000,    249.45,  10022.12,SQLAlchemy
